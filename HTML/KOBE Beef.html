@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="KOBE Beef"></title>
+        <link rel="stylesheet" href="inquiry form.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="../JavaScript/function.js"></script>
+    </head>
+    <body>
+     <h3>説明文</h3>
+     <img src="../占い結果写真/夜景.JPG">
+     <img src="../占い結果写真/神戸牛.JPG">
+     <img src="../占い結果写真/見晴らし.JPG">
+     <br>
+
+       <!--      <p>コンテンツの動画</p>
+       <p>お客様の声</p>
+       <p>Instagram/Twitter/FBとの連動</p> -->
+     <p>If you are interested in, please fill out below and click "SEND".</p>
+       <form>
+         <label>Gender</label>
+         <br>
+         <label>Male</label><input type="radio" name="gender" id="male">
+         <label>Female</label><input type="radio" name="gender" id="female">
+         <label>Other</label><input type="radio" name="gender" id="other">
+         <br>
+         <label>Age Group</label>
+         <select id="age">
+            <option>under 20s</option>
+            <option>20s above</option>
+            <option>30s above</option>
+            <option>40s above</option>
+            <option>50s above</option>
+            <option>60s above</option>
+            <option>70s above</option>
+         </select>
+         <br>
+         <label>Where are you from</label>
+         <input type="text" id="nationality" placeholder="">
+         <p id="nationality"></p>
+         
+         <!-- メールアドレスを入力するテキストボックスを作成する -->
+         <input id="email" type="text" placeholder="Please enter your email address">
+         
+         <!-- 問い合わせを送信するボタンを作成する -->
+         <input type="button" onclick="send_email()" value="SEND">
+
+         <!-- メールアドレスの妥当性を表示するテキストを作成する -->
+         <p id="message" />
+        
+         <!-- ページを戻って表示するボタンを作成する-->
+         <input type="button" onclick="location.href='../HTML/占い.html'" value="Back"> 
+        </form>
+    </body>
+</html>

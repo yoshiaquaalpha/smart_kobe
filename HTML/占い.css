@@ -1,0 +1,4 @@
+.decoration {
+      /* borderプロパティの値にdoubleを指定すると、二重線になります */
+   border: double 5px rgb(0, 4, 255);
+}
