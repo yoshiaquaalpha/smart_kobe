@@ -11,7 +11,7 @@ function _get_selected_text(id) {
     var day = _get_selected_text("day");
 
     // リンク先を設定する
-    link = "../占い結果HTML/"+month+"-"+day+".html";
+    link = "占い結果HTML/"+month+"-"+day+".html";
     location.href = link
   }
 
